@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--authored by Wang-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="refresh" content=" "/>
+<title>
+BTOP Training Opportunities
+</title>
+
+<script type="text/javascript" language="">
+
+function com()
+{
+	var x = confirm("Do you want to go to w3school?");
+	var m = document.getElementsByTagName("meta")[1];
+	if(x == true)
+{ m.content = "0;url=http://www.w3school.com.cn";
+	}else{
+	m.content = " ;url=http://www.w3school.com.cn";
+	}
+}
+
+</script>
+
+<script type='text/javascript'>
+
+function formValidator()
+{
+	var form=document.getElementById("request");
+		var email = document.getElementById("email");
+
+	if (islength(form.organ, "Please enter your organization first, thank you.") )
+	{
+	if(islength(email, "Please enter your email address, thank you."))
+		{
+		document.getElementById("organ").value = form.organ.value;
+		document.getElementById("email").value = email.value;
+return true;
+		}
+	}
+return false;
+}
+
+
+
+function islength(elem, msg)
+{
+	if (elem.value=="")
+	{
+		alert(msg);
+		elem.focus();
+		return false;
+	}else
+	{
+		return true;
+	}
+	}
+	
+	function selection1()
+	{
+					if(document.getElementById("computer").checked==true)
+				{
+					document.getElementById("description1").innerHTML= "<p>This class is designed to be taken as the first part of either an Introduction to Windows 7 or an Introduction to the Mac class. This class introduces students to the computer. We describe the different parts of the computer and show people the similarities between the different computers they might encounter. We also cover using the mouse, and show students how to do more than just open programs with it.</p><p><em>Approximate time: 1-2 hours</em></p>";}
+					else
+					{document.getElementById("description1").innerHTML="";
+					}
+	}
+	function mouseeover(elem)
+	{
+					if(elem == document.getElementById("1"))
+				{
+					document.getElementById("description1").innerHTML= "<p>This class is designed to be taken as the first part of either an Introduction to Windows 7 or an Introduction to the Mac class. This class introduces students to the computer. We describe the different parts of the computer and show people the similarities between the different computers they might encounter. We also cover using the mouse, and show students how to do more than just open programs with it.</p><p><em>Approximate time: 1-2 hours</em></p>";}
+					if(elem ==document.getElementById("2"))
+				{
+					document.getElementById("description2").innerHTML= "<p>The Introduction to Windows 7 shows students how to navigate the Windows desktop, how to use the Taskbar, how to use the Start Menu, and how to use the Windows Explorer. This is a beginner-level class designed for those who want a good foundation with the computer, but also those who have been using a computer for a while but want to know how to be faster and more efficient in Windows.</p><p><em>Approximate time: 4 hours</em></p>";}
+					if(elem ==document.getElementById("3"))
+				{	
+				document.getElementById("description3").innerHTML= "<p>The Introduction to the Mac takes students on a thorough tour of the new Mac computers received by the libraries. Designed to remove the unease many people feel learning a totally new computer, this class teaches the Mac operating system by focusing on the ways it's similar to Windows 7, and how it's different from Windows 7.</p><p><em>Approximate time: 4 hours</em></p>";	
+				}
+					if(elem ==document.getElementById("4"))
+				{
+				document.getElementById("description4").innerHTML= "<p>This class shows students online resources they can use to find employment, further their current careers, or find professional training. We show students how to use the resume templates included in Microsoft Word to make easier the job of typing up or revising their resumes. We also give tips on how to write a top-notch resume, and show them some of the new resume formats designed more for the digital age. A significant portion of this class is spent navigating the Internet.</p><p><em>Approximate time: 6 hours</em></p>";	
+				}
+					if(elem ==document.getElementById("5"))
+				{
+					document.getElementById("description5").innerHTML= "<p>This class shows students how to keep themselves safe online. We show students how to create strong passwords, avoid online scams and phishing scams, how to avoid infecting their computers with viruses, and how to know whether or not the sites they visit are legitimate and secure. We also familiarize students with the different types of threats they can encounter online, and what they can do to keep their computers safe.</p><p><em>Approximate time: 6 hours</em></p>";	
+				}
+					if(elem.id==6)
+				{
+					document.getElementById("description6").innerHTML= "<p>This class introduces students to working with pictures in Adobe Photoshop. We show students how to use the many features of Photoshop such as color modes, painting tools, selections, masks, layers, and blending modes to adjust, retouch, and correct pictures. We also cover filters and effects that can be used to dramatically alter photos.</p><p><em>Approximate time: 6 hours</em></p>";	
+				}
+					
+	}
+	function mouseout(elem)
+	{
+		if(elem.id==1) document.getElementById("description1").innerHTML="";
+		if(elem.id==2)document.getElementById("description2").innerHTML="";
+		if(elem.id==3)document.getElementById("description3").innerHTML="";
+		if(elem.id==4)document.getElementById("description4").innerHTML="";
+		if(elem.id==5)document.getElementById("description5").innerHTML="";
+		if(elem.id==6)document.getElementById("description6").innerHTML="";
+	}
+	
+	
+	function selection2()
+	{
+					if(document.getElementById("Win7").checked==true)
+				{
+    				document.getElementById("description2").innerHTML= "<p>The Introduction to Windows 7 shows students how to navigate the Windows desktop, how to use the Taskbar, how to use the Start Menu, and how to use the Windows Explorer. This is a beginner-level class designed for those who want a good foundation with the computer, but also those who have been using a computer for a while but want to know how to be faster and more efficient in Windows.</p><p><em>Approximate time: 4 hours</em></p>";}
+					else
+					{document.getElementById("description2").innerHTML="";}
+	}
+					
+	function selection3()
+	{
+					if(document.getElementById("MacOS").checked==true)
+				
+				{	document.getElementById("description3").innerHTML= "<p>The Introduction to the Mac takes students on a thorough tour of the new Mac computers received by the libraries. Designed to remove the unease many people feel learning a totally new computer, this class teaches the Mac operating system by focusing on the ways it's similar to Windows 7, and how it's different from Windows 7.</p><p><em>Approximate time: 4 hours</em></p>";	
+				}
+					else
+					{document.getElementById("description3").innerHTML="";
+				}
+	}
+	
+				function selection4()
+	{
+					if(document.getElementById("job").checked==true)
+				
+				{	document.getElementById("description4").innerHTML= "<p>This class shows students online resources they can use to find employment, further their current careers, or find professional training. We show students how to use the resume templates included in Microsoft Word to make easier the job of typing up or revising their resumes. We also give tips on how to write a top-notch resume, and show them some of the new resume formats designed more for the digital age. A significant portion of this class is spent navigating the Internet.</p><p><em>Approximate time: 6 hours</em></p>";	
+				}
+					else
+					{document.getElementById("description4").innerHTML="";
+				}
+	}		
+	
+	function selection5()
+	{
+					if(document.getElementById("security").checked==true)
+				
+				{	document.getElementById("description5").innerHTML= "<p>This class shows students how to keep themselves safe online. We show students how to create strong passwords, avoid online scams and phishing scams, how to avoid infecting their computers with viruses, and how to know whether or not the sites they visit are legitimate and secure. We also familiarize students with the different types of threats they can encounter online, and what they can do to keep their computers safe.</p><p><em>Approximate time: 6 hours</em></p>";	
+				}
+					else
+					{document.getElementById("description5").innerHTML="";
+				}
+	}	
+		
+	function selection6()
+	{
+					if(document.getElementById("photoshop").checked==true)
+				
+				{	document.getElementById("description6").innerHTML= "<p>This class introduces students to working with pictures in Adobe Photoshop. We show students how to use the many features of Photoshop such as color modes, painting tools, selections, masks, layers, and blending modes to adjust, retouch, and correct pictures. We also cover filters and effects that can be used to dramatically alter photos.</p><p><em>Approximate time: 6 hours</em></p>";	
+				}
+					else
+					{document.getElementById("description6").innerHTML="";
+				}
+	}		
+	
+</script>
+
+<style type="text/css">
+input.blank:focus
+{
+background-color: #FFC;
+color: #003;
+}
+
+.point input
+{
+	cursor:pointer;
+}
+</style>
+
+<link rel="stylesheet" href="https://fp.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css" />
+<!--#include virtual="/template/includes/head.html" -->
+</head>
+<body>
+<div id="pageWrap"> 
+  <div id="headerWrap">
+    <div id="header">
+      <div id="logo">
+      	<a href="http://www.auburn.edu"><img src="https://fp.auburn.edu/template/styles/images/headerLogo.png" alt="Auburn University Homepage" /></a>
+      </div>
+      <div id="headerTitle">
+        <div class="topLinks">
+          <a href="http://www.auburn.edu/main/sitemap.php">A-Z Index</a> | 
+          <a href="http://www.auburn.edu/map">Map</a> | 
+          <a href="http://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
+        </div>
+        <form action="http://search.auburn.edu" id="searchForm" method="get">
+          <div class="searchBox">
+            <input type="text" name="q" id="q" accesskey="q" size="28" tabindex="1" class="searchField" onfocus="if(this.value=='Search AU...'){this.value='';this.style.color='black'}" onblur="if(this.value=='')this.value='Search AU...';this.style.color='grey'" value="Search AU..." />
+            <input type="image" src="https://fp.auburn.edu/template/styles/images/searchButton2.png" name="sa" accesskey="z" tabindex="2" alt="Search" value="Submit" class="searchButton" />
+          </div>
+          <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm" />
+          <input type="hidden" name="ie" value="utf-8" />
+          <label for="q" style=" position:absolute; left:-9999px; visibility:hidden;">Enter your search terms</label>
+        </form>
+        <div class="titleArea">
+        	<span class="mainHeading">Center for Governmental Services</span>
+          <span class="subHeading">A Division of Auburn University Outreach</span>
+        </div>
+      </div>
+    </div>
+		<table class="nav">
+      <tr>
+        <td><a href="../about_us/welcome.html">WELCOME</a></td>
+        <td><a href="../about_us/about_us.htm">ABOUT US</a></td>
+        <td><a href="../about_us/staff.html">STAFF</a></td>
+        <td><a href="../about_us/contacts.htm">CONTACTS</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="contentArea">
+    <div class="contentDivision"> 
+      <p class="breadcrumb"> <a href="http://www.auburn.edu">AU Home</a> &gt; <a href="http://www.auburn.edu/outreach/cgs">Center for Governmental Services</a> &gt; <a href="index.php">BTOP</a> &gt; Current Page </p>
+      <p class="breadcrumb">&nbsp;</p>
+<h2 style="color:#06C;"><strong>Request Classroom Training</strong></h2>
+        
+        <p>&nbsp;</p>
+
+  <form action="BTOP_request_data.php" method="post" style="font-size:14px" id="request" onSubmit="return formValidator()"> 
+    <h4 style="color:#06C; font-size:18px;">TRAINING SESSION...................................</h4><br>
+    
+    <p style="width:600px;">Below are the trainging courses you can request to take. You are aslo able to learn more about each course by clicking every checkbox:</p> 
+    <table border="0" cellspacing="0" cellpadding="0" width="600px">
+      <tr>
+        <td> <input type="checkbox" name="computer" value="1" id="computer"  onclick="selection1()"> <label for="computer" id="1" onMouseOver="mouseeover(this)" onMouseOut="mouseout(this)" >Introduction to the Computer</label></td>
+        </tr>
+      <tr>
+        <td style="max-height:2px;"><span id="description1" ></span></td>
+        </tr>
+      <tr>
+        <td> <input type="checkbox" name="Win7" value="1" id="Win7"  onclick="selection2()"> <label for="Win7" id="2" onMouseOver="mouseeover(this)" onMouseOut="mouseout(this)">Introduction to Windows 7</label></td>
+        </tr>
+      <tr>
+        <td style=" max-height:2px"><span id="description2" ></span></td>
+        </tr>
+      <tr>
+        <td> <input type="checkbox" name="MacOS" value="1" id="MacOS"  onclick="selection3()"> <label for="MacOS" id="3" onMouseOver="mouseeover(this)" onMouseOut="mouseout(this)">Introduction to Mac OS X</label></td>
+        </tr>
+      <tr>
+        <td style=" max-height:2px"><span id="description3" ></span></td>
+        </tr>
+      
+      <tr>
+        <td> <input type="checkbox" name="online_job_sources" value="1" id="job"  onclick="selection4()"> <label for="job" id="4" onMouseOver="mouseeover(this)" onMouseOut="mouseout(this)">Online Resources for Job Seekers</label></td>
+        </tr>
+      <tr>
+        <td style=" max-height:2px"><span id="description4" ></span></td>
+        </tr>
+      <tr>
+        <td> <input type="checkbox" name="online_security" value="1" id="security"  onclick="selection5()"> <label for="security" id="5" onMouseOver="mouseeover(this)" onMouseOut="mouseout(this)">Online and Computer Security</label></td>
+        </tr>
+      <tr>
+        <td style=" max-height:2px"><span id="description5" ></span></td>
+        </tr>
+      <tr>
+        <td> <input type="checkbox" name="photoshop" value="1" id="photoshop"  onclick="selection6()"> <label for="photoshop" id="6" onMouseOver="mouseeover(this)" onMouseOut="mouseout(this)">Adobe Photoshop</label></td>
+        </tr>
+      <tr>
+        <td style=" max-height:2px"><span id="description6" ></span></td>
+        </tr>
+      </table>
+    
+    <p>&nbsp;</p>  
+    
+    
+    <h4 style="color:#06C; font-size:18px;">PERSONAL INFORMATION ...............................................</h4><br>
+    <table width="600px" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="45%"><label for="sal">Salutation:</label></td>
+        <td width="55%"><select name="salutation" id="sal" size="1" title="Your salutation">
+          <option selected value="Mr">Mr.</option>
+          <option value="Ms">Ms.</option>
+          <option value="Mrs">Mrs.</option>
+          </select></td>
+        </tr>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" size="20" value="" id="name" title="Your full name" ></td>
+        </tr>
+      <tr>
+        <td><label for="title">Position:</label></td>
+        <td><select name="title" id="title" size="1" style=" width: inherit" title="Your job position">
+          <option value="" selected="selected">Select...</option>
+          <option value="Manager">Manager</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Librarian">Librarian</option>
+          <option value="Officer">Officer</option>
+          <option value="Accountant">Accountant</option>
+          <option value="Consultant">Consultant</option>
+          <option value="Customer service representative">Customer service representative</option>
+          <option value="Program Manager">Program Manager</option>
+          <option value="Engineer">Engineer</option>
+          <option value="Software Engineer">Software Engineer</option>
+          <option value="Project Manager">Project Manager</option>
+          <option value="Cashier">Cashiers</option>
+          <option value="Doctor">Doctor</option>
+          <option value="Secretary">Secretary</option>
+          <option value="Office Manager">Office Manager</option>
+          <option value="Nurse">Nurse</option>
+          <option value="Team Leader">Team Leader</option>
+          <option value="Analyst">Analyst</option>
+          <option value="Designer">Designer</option>
+          <option value="Programmer">Programmer</option>
+          <option value="Marketing Executive">Marketing Executive</option>
+          <option value="Dentist">Dentist</option>
+          <option value="Assistant">Assistant</option>
+          <option value="Recruiter">Recruiter</option>
+          <option value="Office clerk">Office clerk</option>
+          <option value="Auditor">Auditor</option>
+          <option value="Researcher">Researcher</option>
+          <option value="Trainer">Trainer</option>
+          <option value="Scientist">Scientist</option>
+          <option value="Editor">Editor</option>
+          <option value="Director">Director</option>
+          <option value="Driver">Driver</option>
+          <option value="Lawyer">Lawyer</option>
+          <option value="Sales Executive">Sales Executive</option>
+          <option value="Pharmacist">Pharmacist</option>
+          <option value="Supervisor">Supervisor</option>
+          <option value="Technician">Technician</option>
+          <option value="Programmer">Programmer</option>
+          <option value="Marketing Executive">Marketing Executive</option>
+          <option value="Receptionist">Receptionist</option>
+          <option value="Trader">Trader</option>
+          <option value="Supervisor">Supervisor</option>
+          <option value="Serviceman">Serviceman</option>
+          <option value="Office Manager">office Manager</option>
+          <option value="Administrator">Administrator</option>
+          <option value="Store Manager">Store Manager</option>
+          <option value="Social Worker">Social Worker</option>
+          <option value="Artist">Artist</option>
+          <option value="Student">Student</option>
+          <option value="Retiree">Retiree</option>
+          <option value="Unemployed">Unemployed</option>
+          <option value="Veteran">Veteran</option>
+          </select></td>
+        </tr>
+      <tr>
+        <td><label for="org">Organiztion:</label></td>
+        <td><input type="text" name="organ" size="35" value="" id="org" class="blank" title="Your organization" /></td>
+        </tr>
+      <tr>
+        <td><label for="add1">Mailing Address 1:</label></td>
+        <td><input type="text" name="street1" id="add1" value="" size="35" title="Your street address"></td>
+        </tr>
+      <tr>
+        <td ><label for="add2">Mailing  Address 2:</label></td>
+        <td><input type="text" name="street2" id="add2" value="" size="35" title="Your street address"></td>
+        </tr>
+      <tr>
+        <td ><label for="city">City:</label></td>
+        <td><input type="text" name="city" id="city" value="" size="20" title="Your city"></td>
+        </tr>
+      <tr>
+        <td><label for="state">State:</label></td>
+        <td><select name="state" size="1" id="state" title="Your state">
+          <option selected="selected" value="AK">AK</option>
+          <option value="AL">AL</option>
+          <option value="AR">AR</option>
+          <option value="AZ">AZ</option>
+          <option value="CA">CA</option>
+          <option value="CO">CO</option>
+          <option value="CT">CT</option>
+          <option value="DC">DC</option>
+          <option value="DE">DE</option>
+          <option value="FL">FL</option>
+          <option value="GA">GA</option>
+          <option value="HI">HI</option>
+          <option value="IA">IA</option>
+          <option value="ID">ID</option>
+          <option value="IL">IL</option>
+          <option value="IN">IN</option>
+          <option value="KS">KS</option>
+          <option value="KY">KY</option>
+          <option value="LA">LA</option>
+          <option value="MA">MA</option>
+          <option value="MD">MD</option>
+          <option value="ME">ME</option>
+          <option value="MI">MI</option>
+          <option value="MN">MN</option>
+          <option value="MO">MO</option>
+          <option value="MS">MS</option>
+          <option value="MT">MT</option>
+          <option value="NC">NC</option>
+          <option value="ND">ND</option>
+          <option value="NE">NE</option>
+          <option value="NH">NH</option>
+          <option value="NJ">NJ</option>
+          <option value="NM">NM</option>
+          <option value="NV">NV</option>
+          <option value="NY">NY</option>
+          <option value="OH">OH</option>
+          <option value="OK">OK</option>
+          <option value="OR">OR</option>
+          <option value="PA">PA</option>
+          <option value="RI">RI</option>
+          <option value="SC">SC</option>
+          <option value="SD">SD</option>
+          <option value="TN">TN</option>
+          <option value="TX">TX</option>
+          <option value="UT">UT</option>
+          <option value="VA">VA</option>
+          <option value="VT">VT</option>
+          <option value="WA">WA</option>
+          <option value="WI">WI</option>
+          <option value="WV">WV</option>
+          <option value="WY">WY</option>
+          </select></td>
+        </tr>
+      <tr>
+        <td ><label for="zip">Zip Code:</label></td>
+        <td><input type="text" name="zip" id="zip" size="20" title="Your zipcode" maxlength="10"></td>
+        </tr>
+      <tr>
+        <td ><label for="phone">Phone:</label></td>
+        <td><input type="text" name="phone" id="phone" size="20" onfocus="if(this.value=='000-000-0000'){this.value=''}" onblur="if(this.value==''){this.value='000-000-0000'}"  onKeyUp="this.maxLength='12'" value="000-000-0000" title="your phone number"></td>
+        
+        </tr>
+      
+      <tr>
+        <td><label for="email">E-mail:</label></td>
+        <td><input type="text" name="email" id="email" size="35" value="" class="blank" title="Your E-mail address"></td>
+        </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+        </tr>         
+      
+      </table>           
+    <p>&nbsp;</p>
+    
+    <h4 style="color:#06C; font-size:18px;">SPECIAL NEEDS ...............................................</h4><br>
+    
+    <p style="width:500px;">We want this program to be accessible to all who wish to attend. If you require special accommodation for this program, please specify here:</p>        
+    <div><textarea cols="60" rows="6"  name="special_needs"></textarea></div>
+    <p>&nbsp;</p>
+    
+    <div class="point"><input type="submit" value="Submit Request" style="height: 30px; width: 145px; font-size:16px" class="point" /></div>
+  </form>
+        
+        
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      <p class="lastUpdated">&nbsp;</p>
+    </div>
+    <div class="sidebar">
+<h1>PROGRAMS</h1>
+      <br />
+      <p class="sidebarTitle"><A 
+      href="../personnel/Personnel.htm" 
+      target=_self>Human Resources Consulting</A><img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../applied_research/AppliedResearch.htm" 
+      target=_self>Applied Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../SRL/SRL.php" 
+      target=_self>Survey Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../training/Training.htm" 
+      target=_self>Training &amp; Professional<br>
+Development</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../tax/TaxandFinance.htm" 
+      target=_self>Tax &amp; Finance</A></p>
+      <p class="sidebarTitle">&nbsp;</p>
+      <div class="orangeDecorBar">&nbsp;</div>
+      <p class="sidebarTitle">BTOP</p>
+      <p>      
+      <p><span class="home-calendar-item"><a href="BTOP.html">Project Summary</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_partners.html">Partners</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_action_image.html">BTOP In Action</a></span>
+      <p><span class="home-calendar-item"><a href="broadbandmap.html">Service Map</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_resources.html">Participant Resources</a></span>
+      <p><span class="home-calendar-item"><a href="http://www2.ntia.doc.gov/">BTOP National Website</a></span>
+      
+<p class="sidebarTitle">&nbsp;</p>
+     </div>
+  </div>
+  <div id="contentArea_bottom"></div>
+  <div id="footerWrap">
+    <div id="footer">
+   <div class="footSection">
+      <ul>
+        <li>Center for Governmental Services<br>
+          2236 Haley Center<br>
+          Auburn University<br>
+          Alabama 36849-5268 <BR>
+          Phone (334) 844-4781 | Fax (334) 844-1919</li>
+      </ul>
+    </div>
+    <div class="footSection"> 
+      <p><br>
+        <a href="http://www.facebook.com/pages/Center-for-Governmental-Services/278726875565598"><img src="../images/facebookicon.gif" alt="facebook" width="42" height="42" border="0"></a></p>
+      </p>
+      </div>
+    <div class="footSection noBorder">
+      <p><img src="http://www.auburn.edu/template/images/arra.png" alt="American Recovery and Reinvestment Act" /><br /><a href="http://www.auburn.edu/arra">American Recovery &amp;<br />Reinvestment Act</a></p>
+    </div>
+    <!-- <div class="clear"></div> -->
+  </div>  
+    <div id="subfooter">
+      <p><A href="about_us/contacts.htm">Contact Us </A><BR>
+Copyright
+  <!--                        var time=new Date();                        var year=time.getYear();                        if (year < 2000) year = year + 1900;                        document.write(year);                      //-->
+2013 Center for Governmental Services at Auburn University<br>
+Webmaster: Patick Rose, 844-1914
+<br></div>
+  </div>
+  <!--#include virtual="/template/includes/gatc.html" --> 
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/template_BTOP.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>Auburn University Center for Governmental Services</title>
+<link rel="stylesheet" href="css/global.css">
+<!-- #EndEditable -->
+<link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css" />
+<!--#include virtual="/template/includes/head.html" -->
+<!-- InstanceBeginEditable name="head" -->
+<meta charset="utf-8">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$("#slides").slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				generatePagination: false,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="pageWrap"> 
+  <div id="headerWrap">
+    <div id="header">
+      <div id="logo">
+      	<a href="http://www.auburn.edu"><img src="../images/headerLogo.png" alt="Auburn University Homepage" /></a>
+      </div>
+      <div id="headerTitle">
+        <div class="topLinks">
+          <a href="http://www.auburn.edu/main/sitemap.php">A-Z Index</a> | 
+          <a href="http://www.auburn.edu/map">Map</a> | 
+          <a href="http://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
+        </div>
+        <form action="http://search.auburn.edu" id="searchForm" method="get">
+          <div class="searchBox">
+            <input type="text" name="q" id="q" accesskey="q" size="28" tabindex="1" class="searchField" onfocus="if(this.value=='Search AU...'){this.value='';this.style.color='black'}" onblur="if(this.value=='')this.value='Search AU...';this.style.color='grey'" value="Search AU..." />
+            <input type="image" src="../images/searchButton2.png" name="sa" accesskey="z" tabindex="2" alt="Search" value="Submit" class="searchButton" />
+          </div>
+          <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm" />
+          <input type="hidden" name="ie" value="utf-8" />
+          <label for="q" style=" position:absolute; left:-9999px; visibility:hidden;">Enter your search terms</label>
+        </form>
+        <div class="titleArea">
+        	<span class="mainHeading">Center for Governmental Services</span>
+          <span class="subHeading">A Division of Auburn University Outreach</span>
+        </div>
+      </div>
+    </div>
+		<table class="nav">
+      <tr>
+        <td><a href="../about_us/welcome.html">WELCOME</a></td>
+        <td><a href="../about_us/about_us.htm">ABOUT US</a></td>
+        <td><a href="../about_us/staff.html">STAFF</a></td>
+        <td><a href="../about_us/contacts.htm">CONTACTS</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="contentArea">
+    <div class="contentDivision"> 
+      <p class="breadcrumb"> <!-- InstanceBeginEditable name="breadcrumb" --><a href="http://www.auburn.edu">AU Home</a> &gt; <a href="http://www.auburn.edu/outreach/cgs">Center for Governmental Services</a> &gt; <a href="index.php">BTOP</a> &gt; BTOP In Action<!-- InstanceEndEditable --></p>
+      <p class="breadcrumb">&nbsp;</p>
+      <!-- InstanceBeginEditable name="body" -->
+      <h1 class="style11">BTOP In Action</h1>
+       <div id="container">
+         <div class="clear"></div>
+         <div id="container">
+		<div id="example">
+			
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="photos/before_1_slide.jpg" width="570" height="270" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+							<p>A location before the BTOP program installed new resources.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="photos/after_1_slide.jpg" width="570" height="270" alt="Slide 2">
+						<div class="caption">
+							<p>The same area after BTOP installed new resources.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="photos/crenshaw04_slide.jpg" width="570" height="270" alt="Slide 3">
+						<div class="caption">
+							<p>Students enjoying the new technology installed.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="photos/crenshaw01_slide.jpg" width="570" height="270" alt="Slide 4">
+						<div class="caption">
+							<p>Unboxing new machines at Crenshaw.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="photos/cleburne03_slide.jpg" width="570" height="270" alt="Slide 5">
+						<div class="caption">
+							<p>A new technology lab finished in Cleburne.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="photos/winston04_slide.jpg" width="570" height="270" alt="Slide 6">
+						<div class="caption">
+							<p>A computer lab in Winston in the process of being upgraded.</p>
+						</div>
+					</div>
+					<div class="slide">
+						<img src="photos/winston07_slide.jpg" width="570" height="270" alt="Slide 7">
+						<div class="caption">
+							<p>A completed computer lab in Winston.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/crenshaw06_slide.jpg" width="570" height="270" alt="Slide 8">
+						<div class="caption">
+							<p>A completed computer lab in Crenshaw.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/baldwin01_slide.jpg" width="570" height="270" alt="Slide 9">
+						<div class="caption">
+							<p>New technology installed in a library in Baldwin.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/crenshaw02_slide.jpg" width="570" height="270" alt="Slide 10">
+						<div class="caption">
+							<p>A completed technology center in Crenshaw.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/btop11_slide.jpg" width="570" height="270" alt="Slide 11">
+						<div class="caption">
+							<p>The state of a computer lab before BTOP performed it's upgrades.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/btop12_slide.jpg" width="570" height="270" alt="Slide 12">
+						<div class="caption">
+							<p>Elementary school students getting to use new computers made possible by BTOP.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/btop13_slide.jpg" width="570" height="270" alt="Slide 13">
+						<div class="caption">
+							<p>New Apple MacBook Pros being prepped for installation.</p>
+						</div>
+					</div>
+                    <div class="slide">
+						<img src="photos/boaz_lib_slide.jpg" width="570" height="270" alt="Slide 14">
+						<div class="caption">
+							<p>New technology in use at the Boaz Library.</p>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			<img src="img/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">
+		</div>
+		<div id="footer">
+			<font color='#FFFFFF'><p >This gallery contains images of BTOP's on site work in various locations.</p> </font>
+</div>
+	</div>
+    </div>
+    
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+      <!-- InstanceEndEditable -->
+      <p class="lastUpdated">&nbsp;</p>
+    </div>
+    <div class="sidebar">
+<h1>PROGRAMS</h1>
+      <br />
+      <p class="sidebarTitle"><A 
+      href="../personnel/Personnel.htm" 
+      target=_self>Human Resources Consulting</A><img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../applied_research/AppliedResearch.htm" 
+      target=_self>Applied Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../SRL/SRL.php" 
+      target=_self>Survey Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../training/Training.htm" 
+      target=_self>Training &amp; Professional<br>
+Development</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../tax/TaxandFinance.htm" 
+      target=_self>Tax &amp; Finance</A></p>
+      <p class="sidebarTitle">&nbsp;</p>
+      <div class="orangeDecorBar">&nbsp;</div>
+      <p class="sidebarTitle">BTOP</p>
+      <p>      
+      <p><span class="home-calendar-item"><a href="BTOP.html">Project Summary</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_partners.html">Partners</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_action_image.html">BTOP In Action</a></span>
+      <p><span class="home-calendar-item"><a href="broadbandmap.html">Service Map</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_resources.html">Participant Resources</a></span>
+      <p><span class="home-calendar-item"><a href="http://www2.ntia.doc.gov/">BTOP National Website</a></span>
+      
+<p class="sidebarTitle">&nbsp;</p>
+     </div>
+  </div>
+  <div id="contentArea_bottom"></div>
+  <div id="footerWrap">
+    <div id="footer">
+   <div class="footSection">
+      <ul>
+        <li>Center for Governmental Services<br>
+          2236 Haley Center<br>
+          Auburn University<br>
+          Alabama 36849-5268 <BR>
+          Phone (334) 844-4781 | Fax (334) 844-1919</li>
+      </ul>
+    </div>
+    <div class="footSection"> 
+      <p><br>
+        <a href="http://www.facebook.com/pages/Center-for-Governmental-Services/278726875565598"><img src="../images/facebookicon.gif" alt="facebook" width="42" height="42" border="0"></a></p>
+      </p>
+      </div>
+    <div class="footSection noBorder">
+      <p><img src="http://www.auburn.edu/template/images/arra.png" alt="American Recovery and Reinvestment Act" /><br /><a href="http://www.auburn.edu/arra">American Recovery &amp;<br />Reinvestment Act</a></p>
+    </div>
+    <!-- <div class="clear"></div> -->
+  </div>  
+    <div id="subfooter">
+      <p><A href="about_us/contacts.htm">Contact Us </A><BR>
+Copyright
+  <!--                        var time=new Date();                        var year=time.getYear();                        if (year < 2000) year = year + 1900;                        document.write(year);                      //-->
+2013 Center for Governmental Services at Auburn University<br>
+Webmaster: Patick Rose, 844-1914
+<br></div>
+  </div>
+  <!--#include virtual="/template/includes/gatc.html" --> 
+</div>
+</body>
+<!-- InstanceEnd --></html>

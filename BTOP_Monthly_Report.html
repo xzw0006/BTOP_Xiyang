@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/template_BTOP.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>
+Monthly Report - Auburn University
+</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css" />
+<!--#include virtual="/template/includes/head.html" -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div id="pageWrap"> 
+  <div id="headerWrap">
+    <div id="header">
+      <div id="logo">
+      	<a href="http://www.auburn.edu"><img src="../images/headerLogo.png" alt="Auburn University Homepage" /></a>
+      </div>
+      <div id="headerTitle">
+        <div class="topLinks">
+          <a href="http://www.auburn.edu/main/sitemap.php">A-Z Index</a> | 
+          <a href="http://www.auburn.edu/map">Map</a> | 
+          <a href="http://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
+        </div>
+        <form action="http://search.auburn.edu" id="searchForm" method="get">
+          <div class="searchBox">
+            <input type="text" name="q" id="q" accesskey="q" size="28" tabindex="1" class="searchField" onfocus="if(this.value=='Search AU...'){this.value='';this.style.color='black'}" onblur="if(this.value=='')this.value='Search AU...';this.style.color='grey'" value="Search AU..." />
+            <input type="image" src="../images/searchButton2.png" name="sa" accesskey="z" tabindex="2" alt="Search" value="Submit" class="searchButton" />
+          </div>
+          <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm" />
+          <input type="hidden" name="ie" value="utf-8" />
+          <label for="q" style=" position:absolute; left:-9999px; visibility:hidden;">Enter your search terms</label>
+        </form>
+        <div class="titleArea">
+        	<span class="mainHeading">Center for Governmental Services</span>
+          <span class="subHeading">A Division of Auburn University Outreach</span>
+        </div>
+      </div>
+    </div>
+		<table class="nav">
+      <tr>
+        <td><a href="../about_us/welcome.html">WELCOME</a></td>
+        <td><a href="../about_us/about_us.htm">ABOUT US</a></td>
+        <td><a href="../about_us/staff.html">STAFF</a></td>
+        <td><a href="../about_us/contacts.htm">CONTACTS</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="contentArea">
+    <div class="contentDivision"> 
+      <p class="breadcrumb"> <!-- InstanceBeginEditable name="breadcrumb" --><a href="http://www.auburn.edu">AU Home</a> &gt; <a href="http://www.auburn.edu/outreach/cgs">Center for Governmental Services</a> &gt; <a href="index.php">BTOP</a> &gt; <a href="BTOP_resources.html">Resources</a> &gt; Monthly Report<!-- InstanceEndEditable --></p>
+      <p class="breadcrumb">&nbsp;</p>
+      <!-- InstanceBeginEditable name="body" -->
+      <?php 
+      $today = date("Y-m-d");
+      
+      ?>
+      <h1><strong>Monthly Report</strong></h1>
+      <p><br>
+      </p>
+      <form action="monthly_report.php" method="post">
+      		<h3> General Information </h3><br>
+    		Recipient Organization: <input type="text" name="organization" /><br><br>
+            Certifying Official:    <input type="text" name="certifying_official" /><br><br>
+            Reporting Period End Day: 
+            <select name="month">
+            	<option selected value="none">Select month:</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select> 
+            <select name="day">
+            	<option selected value="none">Select day:</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>                                                               
+                <option value="31">31</option>                
+            </select>
+            <select name="year">
+            	<option selected value="none">Select year:</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+            </select> <br> 
+            (last day of most recent month)<br><br><br>
+            <h3> Hours of Operation </h3>
+            <TABLE BORDER="">
+                <TR>
+                    <TD width="220"><a href="#" title="Number of hours per week (M-F) your library is open.">Total hours of operation per<br>
+                  120-hour business week</a></TD>
+                    <TD width="212">Total hours of operation<br>
+                    per 48-hour weekend</TD>
+                    <TD width="234"><a href="#" title="How many hours per week do you and your staff spend: helping people on the computers, holding classes, updating the computers, or dealing with computer issues?">Total hours contributed by staff to public computing per month</a></TD>
+                </TR>
+                <TR>                  
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="hours_per_week" SIZE="20">
+                    </TD>
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="hours_per_weekend" SIZE="20">
+                    </TD>
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="staff_pcc_hours" SIZE="20">
+                    </TD>
+                </TR>
+            </TABLE><br><br>
+            <h3> Public Computer Hours </h3>
+            <TABLE BORDER="">
+                <TR>
+                    <TD>Number of workstation available to the public</TD>
+                    <TD>Average number of computer users Per 120-hour business week</TD>
+                    <TD>Average number of computer users per 48 hour weekend</TD>
+                    <TD>Speed of broadband access (Mbps)</TD>
+                </TR>
+                <TR>                  
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="workstations" SIZE="20">
+                    </TD>
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="users_weekly" SIZE="20">
+                    </TD>
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="users_weekend" SIZE="20">
+                    </TD>
+                    <TD>
+                    <INPUT TYPE="TEXT" NAME="broadband_speed" SIZE="20">
+                    </TD>
+                </TR>
+            </TABLE><br><br>
+        	<h3> Detailed Monthly Computer Usage</h3><br>
+            <p> Provide	the primary uses of the public computing services during the <strong>MONTHLY</strong> reporting period. Participants may be counted more than once if they attended multiple training sessions or access public computers at different times. Insert any additional types of  uses in the &quot;other&quot;fields - homework, online classes, plus anything that doesn't really fit.</p>
+            <table border="">
+           	  <tr>
+                    <td width="139" height="43"> <br>
+                    <strong>Category </strong></td>
+                 	<td width="164"> <br>
+           	        <strong><a href="#"title="Number of people using the computers for this purpose, per month.">Users</a></strong></td>
+                    <td width="168"> <strong><a href="#" title="Open access hours should be the same number of hours per month your library is open. The others might be different though, if certain services are only offered at certain times.">Hours<br>
+                    Available</a></strong></td>
+                    <td width="189"> <br>
+                    <strong>Total</strong></td>
+                </tr>
+                <tr>
+                	<td><a href="#" title="A catch-all category for general computer usage.">Open access</a></td>
+                    <td><INPUT TYPE="TEXT" NAME="oa_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="oa_hours_offered" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="oa_hours_total" SIZE="20"></td>
+                </tr>
+                <tr>
+                	<td><a href="#" title="If people are using the computers to create video, audio or music, or using them to watch videos/listen to music. If they're taking online classes with video, you can count that.">Multimedia</a></td>
+                    <td><INPUT TYPE="TEXT" NAME="mm_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="mm_hours_offered" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="mm_hours_total" SIZE="20"></td>
+                </tr>
+                <tr>
+                	<td><a href="#" title="Looking for jobs, applying for jobs, writing resumes; if they use the computers for a video interview, you can count that as multimedia too.">Office skills</a></td>
+                    <td><INPUT TYPE="TEXT" NAME="os_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="os_hours_offered" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="os_hours_total" SIZE="20"></td>
+                </tr>
+                <tr>
+                	<td><a href="#" title="Anyone using the computers for English as a Second Language class.">ESL</a></td>
+                    <td><INPUT TYPE="TEXT" NAME="esl_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="esl_hours_offered" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="esl_hours_total" SIZE="20"></td>
+                </tr>
+                <tr>
+                	<td><a href="#" title="Number of people using the computers for this purpose, per month.">Job search</a></td>
+                    <td><INPUT TYPE="TEXT" NAME="js_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="js_hours_offered" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="js_hours_total" SIZE="20"></td>
+                </tr>
+                
+                <tr>
+                	<td><input type="text" name="other1" size="20" value="Other"></td>
+                    <td><input type="text" name="other1_people"></td>
+                    <td><INPUT TYPE="TEXT" NAME="other1_hours_offered" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="other1_hours_total" SIZE="20"></td>
+               </tr>
+               
+               <tr>
+                  <td><input type="text" name="other2" size="20" value="Other"></td>
+                  <td><input type="text" name="other2_people"></td>
+                  <td><INPUT TYPE="TEXT" NAME="other2_hours_offered" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="other2_hours_total" SIZE="20"></td>
+              </tr>
+               <tr>
+                 <td><input type="text" name="other3" size="20" value="Other"></td>
+                 <td><input type="text" name="other3_people"></td>
+                 <td><INPUT TYPE="TEXT" NAME="other3_hours_offered" SIZE="20"></td>
+                 <td><INPUT TYPE="TEXT" NAME="other3_hours_total" SIZE="20"></td>
+               </tr>
+    </table><br><br>
+            
+            <h3> Training Programs </h3><br>
+            <p>Please describe the training programs provided at your location during the reporting period. The number of training hours is calculated by multiplying the number of hours for each program by the number of participants.</p>
+        	<table border="">
+            	<tr>
+                    <td width="160"> <a href="#" title="Training you provide, either through classes or one-on-one instruction, or classes taught by other groups that may use your library computers.">                    <strong>Name of training</strong></a></td>
+                    <td width="155">                  <strong><a href="#" title="How long was the class, or how many hours per month you estimate you spend on individual instruction.">Length</a></strong></td>
+                    <td width="154"> <strong>Participants </strong></td>
+                    <td width="173"> <strong><a href="#" title="This should be the length of the class (or time spent on individual instruction) times the number of people.">Total Hours </a></strong></td>
+                </tr>
+                <tr>
+                	<td><INPUT TYPE="TEXT" NAME="training1" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn1_hours_per" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn1_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn1_hours_ttl" SIZE="20"></td>
+                </tr>
+                <tr>
+                	<td><INPUT TYPE="TEXT" NAME="training2" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn2_hours_per" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn2_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn2_hours_ttl" SIZE="20"></td>
+                </tr>
+                <tr>
+                  <td><INPUT TYPE="TEXT" NAME="training3" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn3_hours_per" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn3_people" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn3_hours_ttl" SIZE="20"></td>
+                </tr>
+                <tr>
+                  <td><INPUT TYPE="TEXT" NAME="training4" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn4_hours_per" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn4_people" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn4_hours_ttl" SIZE="20"></td>
+                </tr>
+                <tr>
+                  <td><INPUT TYPE="TEXT" NAME="training5" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn5_hours_per" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn5_people" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn5_hours_ttl" SIZE="20"></td>
+                </tr>
+                <tr>
+                  <td><INPUT TYPE="TEXT" NAME="training6" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn6_hours_per" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn6_people" SIZE="20"></td>
+                  <td><INPUT TYPE="TEXT" NAME="trn6_hours_ttl" SIZE="20"></td>
+                </tr>
+                <tr>
+                	<td><INPUT TYPE="TEXT" NAME="training7" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn7_hours_per" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn7_people" SIZE="20"></td>
+                    <td><INPUT TYPE="TEXT" NAME="trn7_hours_ttl" SIZE="20"></td>
+                </tr>
+
+</table><br><br>
+            <h3> Public Computing Services Promotional Activites </h3><br>
+            <p>Please describe any outreach or marketing efforts conducted by our location to promote awareness about your public computing services. How do you advertise your library's computer services? Have you held any press events? Have there been any newspaper articles or TV/radio spots about your computer center?</p>
+        	<table border="">
+           	  <tr>
+                    <td> Name of Activity </td>
+                    <td> Description </td>
+
+                </tr>
+                <tr>
+                    <td><textarea rows="3" cols="20" name="pcc_activity1"></textarea></td>
+                    <td><textarea rows="3" cols="60" name="pcc_description1"></textarea></td>
+                </tr>
+                <tr>
+                	<td><textarea rows="3" cols="20" name="pcc_activity2"></textarea></td>
+                    <td><textarea rows="3" cols="60" name="pcc_description2"></textarea></td>
+                </tr>
+                <tr>
+                	<td><textarea rows="3" cols="20" name="pcc_activity3"></textarea></td>
+                    <td><textarea rows="3" cols="60" name="pcc_description3"></textarea></td>
+                </tr>
+
+            </table><br><br>
+            <h3> Accomplishment, Challenges & Best Practices </h3><br>
+            <p>Describe any major accomplishments, challenges, or best practices. In particular, please identify any success stories or issues where technical assistance from us may be useful. This can be anything, really: good news for the library, problems you're having, anything you do that seems to work really well for you, etc.</p>
+            <table>
+           	  <tr>
+                	<td><textarea rows="10" cols="80" name="acbp_description"></textarea></td>
+                </tr>
+            </table></br><br><br>
+            <h3> Economic Recovery </h3><br>
+            <p>Describe how your public computing services support economic recovery, such as providing job training, access to job searches, online course offerings, certification, etc. In particular, identify how you serve socially and economically disadvantaged residents. Have any patrons gotten jobs, interviews, or completed some job-related training? Have any students been able to take classes or do school work they couldn't do before?</p>
+            <table>
+           	  <tr>
+                	<td><textarea rows="10" cols="80" name="er_description"></textarea></td>
+                </tr>
+            </table><br>           
+            <p>
+              <input type="submit" style="margin-left:270px; font-size:24px" />
+            </p>
+      </form>
+      
+     
+      
+      <p>&nbsp;</p>
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+	  <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <!-- InstanceEndEditable -->
+      <p class="lastUpdated">&nbsp;</p>
+    </div>
+    <div class="sidebar">
+<h1>PROGRAMS</h1>
+      <br />
+      <p class="sidebarTitle"><A 
+      href="../personnel/Personnel.htm" 
+      target=_self>Human Resources Consulting</A><img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../applied_research/AppliedResearch.htm" 
+      target=_self>Applied Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../SRL/SRL.php" 
+      target=_self>Survey Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../training/Training.htm" 
+      target=_self>Training &amp; Professional<br>
+Development</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../tax/TaxandFinance.htm" 
+      target=_self>Tax &amp; Finance</A></p>
+      <p class="sidebarTitle">&nbsp;</p>
+      <div class="orangeDecorBar">&nbsp;</div>
+      <p class="sidebarTitle">BTOP</p>
+      <p>      
+      <p><span class="home-calendar-item"><a href="BTOP.html">Project Summary</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_partners.html">Partners</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_action_image.html">BTOP In Action</a></span>
+      <p><span class="home-calendar-item"><a href="broadbandmap.html">Service Map</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_resources.html">Participant Resources</a></span>
+      <p><span class="home-calendar-item"><a href="http://www2.ntia.doc.gov/">BTOP National Website</a></span>
+      
+<p class="sidebarTitle">&nbsp;</p>
+     </div>
+  </div>
+  <div id="contentArea_bottom"></div>
+  <div id="footerWrap">
+    <div id="footer">
+   <div class="footSection">
+      <ul>
+        <li>Center for Governmental Services<br>
+          2236 Haley Center<br>
+          Auburn University<br>
+          Alabama 36849-5268 <BR>
+          Phone (334) 844-4781 | Fax (334) 844-1919</li>
+      </ul>
+    </div>
+    <div class="footSection"> 
+      <p><br>
+        <a href="http://www.facebook.com/pages/Center-for-Governmental-Services/278726875565598"><img src="../images/facebookicon.gif" alt="facebook" width="42" height="42" border="0"></a></p>
+      </p>
+      </div>
+    <div class="footSection noBorder">
+      <p><img src="http://www.auburn.edu/template/images/arra.png" alt="American Recovery and Reinvestment Act" /><br /><a href="http://www.auburn.edu/arra">American Recovery &amp;<br />Reinvestment Act</a></p>
+    </div>
+    <!-- <div class="clear"></div> -->
+  </div>  
+    <div id="subfooter">
+      <p><A href="about_us/contacts.htm">Contact Us </A><BR>
+Copyright
+  <!--                        var time=new Date();                        var year=time.getYear();                        if (year < 2000) year = year + 1900;                        document.write(year);                      //-->
+2013 Center for Governmental Services at Auburn University<br>
+Webmaster: Patick Rose, 844-1914
+<br></div>
+  </div>
+  <!--#include virtual="/template/includes/gatc.html" --> 
+</div>
+</body>
+<!-- InstanceEnd --></html>

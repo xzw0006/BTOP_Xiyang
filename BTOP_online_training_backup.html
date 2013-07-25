@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+BTOP Training Opportunities
+</title>
+<link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css" />
+<!--#include virtual="/template/includes/head.html" -->
+
+<script type='text/javascript'>
+function nameValidate(){
+  var name = document.getElementById("name");
+  if(!length(name)){
+    document.getElementById("name").value= name.value;
+    document.getElementById("nResult").innerHTML= "<strong>&hearts;</strong> <em>Please enter a valid name!</em>";
+  return false;
+}else{
+	document.getElementById("name").value= name.value;
+    document.getElementById("nResult").innerHTML= "";
+return true;}
+}
+
+  function length(elem){
+var uInput = elem.value;
+if(uInput.length> 0){
+return true;
+}else{
+elem.focus();
+return false;
+}
+}
+
+
+function formValidator(){
+  var user = document.getElementById("name");
+    
+        if(ulength(user, 0)){
+	    
+			document.getElementById("name").value= user.value;
+		  return true;
+         }else{
+		 document.getElementById("name").value= user.value;
+    document.getElementById("nResult").innerHTML= "<strong>&hearts;</strong> <em>Please enter a valid name!</em>"; 
+return false;
+}
+}
+
+function ulength(elem, min){
+   var uInput = elem.value;
+    if(uInput.length > min){
+		return true;
+    }else{
+		alert("Please enter your username and organization first, thank you.");
+		elem.focus();
+		return false;
+			}
+}
+</script>
+
+<style type="text/css">
+input.blank:focus
+{
+background-color: #FFC;
+color: #003;
+}
+</style>
+</head>
+<body>
+<div id="pageWrap"> 
+  <div id="headerWrap">
+    <div id="header">
+      <div id="logo">
+      	<a href="http://www.auburn.edu"><img src="../images/headerLogo.png" alt="Auburn University Homepage" /></a>
+      </div>
+      <div id="headerTitle">
+        <div class="topLinks">
+          <a href="http://www.auburn.edu/main/sitemap.php">A-Z Index</a> | 
+          <a href="http://www.auburn.edu/map">Map</a> | 
+          <a href="http://www.auburn.edu/main/auweb_campus_directory.html" class="lastTopLink">People Finder</a>
+        </div>
+        <form action="http://search.auburn.edu" id="searchForm" method="get">
+          <div class="searchBox">
+            <input type="text" name="q" id="q" accesskey="q" size="28" tabindex="1" class="searchField" onfocus="if(this.value=='Search AU...'){this.value='';this.style.color='black'}" onblur="if(this.value=='')this.value='Search AU...';this.style.color='grey'" value="Search AU..." />
+            <input type="image" src="../images/searchButton2.png" name="sa" accesskey="z" tabindex="2" alt="Search" value="Submit" class="searchButton" />
+          </div>
+          <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm" />
+          <input type="hidden" name="ie" value="utf-8" />
+          <label for="q" style=" position:absolute; left:-9999px; visibility:hidden;">Enter your search terms</label>
+        </form>
+        <div class="titleArea">
+        	<span class="mainHeading">Center for Governmental Services</span>
+          <span class="subHeading">A Division of Auburn University Outreach</span>
+        </div>
+      </div>
+    </div>
+		<table class="nav">
+      <tr>
+        <td><a href="../about_us/welcome.html">WELCOME</a></td>
+        <td><a href="../about_us/about_us.htm">ABOUT US</a></td>
+        <td><a href="../about_us/staff.html">STAFF</a></td>
+        <td><a href="../about_us/contacts.htm">CONTACTS</a></td>
+      </tr>
+    </table>
+  </div>
+  <div id="contentArea">
+    <div class="contentDivision"> 
+      <p class="breadcrumb"> <a href="http://www.auburn.edu">AU Home</a> &gt; <a href="http://www.auburn.edu/outreach/cgs">Center for Governmental Services</a> &gt; <a href="index.php">BTOP</a> &gt; Online Training</p>
+      <p class="breadcrumb">&nbsp;</p>
+<h1><strong>Online Training</strong></h1>
+      <p>&nbsp;</p>
+      <h3>Please enter your information below, click the class<br>
+        you want to view and then click open.<br>
+        <br>
+      </h3>
+      <form action="" method="post" style="font-size:14px" name="frm" target="_self" onSubmit="return formValidator()">
+        <h5>&nbsp;</h5>
+        <table width="75%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+                <td width="19%" align="right"><label for="name"><span title="Your full name">Name:</span></label></td>
+                <td width="29%" style="padding-left: 10px;"><input type="text" name="name" size="20" value="" class="blank" id="name" onBlur="nameValidate()"/></td>
+                <td width="52%" align="left"><span id="nResult" style="color:#F00;">&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td align="right"><label for="organ"><span title="Your organization">Organization:</span></label></td>
+                <td style="padding-left: 10px;"><input type="text" name="organization" size="20" value="" class="blank" id="organ" /></td>
+			   <td  align="left"><span>&nbsp;</span></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <h5><br>
+        </h5>
+        <table width="650" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+            <td align="left" valign="middle"><h3><input type="image" src="thumbs/windowsstart.png" alt="windows" width="200" height="135" onclick="if(formValidator()) {frm.action='BTOP_training1_play.php'}else{return false}" /><br>
+                <strong>Getting Started with Windows 7</strong></h3>
+              <p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><p><input type="image" src="thumbs/macstart.png" alt="mac" width="200" height="145" onclick="if(formValidator()){frm.action='BTOP_training2_play.php'}else{return false}" /></p>
+            <h3><strong>Getting Started with Mac</strong></h3>
+            <p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><p><input type="image" src="thumbs/trouble.png" alt="trouble" width="200" height="135" onclick="if(formValidator()){frm.action='BTOP_training3_play.php'}else{return false}" /></p>
+            <h3><strong>Troubleshooting and Maintenance for Windows 7</strong></h3>
+            <p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><p><input type="image" src="thumbs/security.png" alt="security" width="200" height="150" onclick="if(formValidator()){frm.action='ECDI/CGS-eSafety_eSecurity/eSafety_Security.php'}else{return false}" ></p>
+            <h3><strong>Online Security eLearning Module</strong></h3>
+            <p>&nbsp;</p></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><p><input type="image" src="thumbs/broadband.png" alt="broadband" width="200" height="151" onclick="if(formValidator()){frm.action='ECDI/CGS-Broadband101/Intro-to_BB.php'}else{return false}" ></p>
+            <h3><strong>Introduction to Broadband eLearning Module</strong></h3></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <h5><br>
+        </h5>
+       
+        <blockquote>
+          <h5></h5>
+          <p></p>
+        </blockquote>
+      </form>
+      
+
+      
+      <p>&nbsp;</p>
+      <h3>&nbsp;</h3>
+      <h3>&nbsp;</h3>
+	  <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p class="lastUpdated">&nbsp;</p>
+    </div>
+    <div class="sidebar">
+<h1>PROGRAMS</h1>
+      <br />
+      <p class="sidebarTitle"><A 
+      href="../personnel/Personnel.htm" 
+      target=_self>Human Resources Consulting</A><img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../applied_research/AppliedResearch.htm" 
+      target=_self>Applied Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../SRL/SRL.php" 
+      target=_self>Survey Research</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../training/Training.htm" 
+      target=_self>Training &amp; Professional<br>
+      Development</A> <img src="../images/spacer_new.gif" alt="" width="97" height="9"> <A 
+      href="../tax/TaxandFinance.htm" 
+      target=_self>Tax &amp; Finance</A></p>
+      <div class="orangeDecorBar">&nbsp;</div>
+      <p class="sidebarTitle">BTOP</p>
+      <p>      
+      <p><span class="home-calendar-item"><a href="BTOP.html">Project Summary</a> </span>
+      <p><span class="home-calendar-item"><a href="BTOP_partners.html">Partners</a></span>
+      <p><span class="home-calendar-item"><a href="BTOP_action_image.html">BTOP In Action</a></span>
+      <p><span class="home-calendar-item"><a href="broadbandmap.html">Service Map</a> </span>
+      <p><span class="home-calendar-item"><a href="BTOP_resources.html">Participant Resources</a> </span>
+      <p><span class="home-calendar-item"><a href="http://www2.ntia.doc.gov/">BTOP National Website</a></span>
+      <p class="sidebarTitle">&nbsp;</p>
+      <p class="sidebarTitle">&nbsp;</p>
+     </div>
+  </div>
+  <div id="contentArea_bottom"></div>
+  <div id="footerWrap">
+    <div id="footer">
+    <div id="footSectionWrap">
+      <div class="footSection">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="footSection"> 
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="footSection noBorder">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    </div>  
+    <div id="subfooter">Center for Governmental Services | 2236 Haley Center | Auburn University,   Alabama 36849-5268 <BR>
+      Phone (334) 844-4781 | Fax (334) 844-1919 | <A href="about_us/contacts.htm">Contact Us </A><BR>
+      Copyright
+      <!--                        var time=new Date();                        var year=time.getYear();                        if (year < 2000) year = year + 1900;                        document.write(year);                      //-->
+2012 Center for Governmental Services at Auburn University</div>
+  </div>
+  <!--#include virtual="/template/includes/gatc.html" --> 
+</div>
+</body>
+</html>
